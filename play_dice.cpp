@@ -36,13 +36,11 @@ int main()
         {
             cout << "You rolled " << die1 << " & " << die2 << endl;
             cout << "You Win!" << endl;
-            gameStart = 'n';
         }
         else if (dieTotal == 2 || dieTotal == 3 || dieTotal == 12)
         {
             cout << "You rolled " << die1 << " & " << die2 << endl;
             cout << "The sum of the dice is " << dieTotal << ". You Lose." << endl;
-            gameStart = 'n';
         }
         else
         {
@@ -68,9 +66,6 @@ int main()
                     cout << "You rolled " << die1 << " & " << die2 << endl;
                     cout << "You Win" << endl;
 
-                    cout << "Do you want to play again?";
-                    cin >> gameStart;
-
                     numRolls = 0;
                 }
                 else if (dieSum == 7)
@@ -78,28 +73,22 @@ int main()
                     cout << "You rolled " << die1 << " & " << die2 << endl;
                     cout << "You Lose" << endl;
 
-                    cout << "Do you want to play again?";
-                    cin >> gameStart;
-
                     numRolls = 0;
                 }
                 else 
                 {
                     cout << "You rolled " << die1 << " & " << die2 << endl;
 
-                    cout << "Press R to roll again!";
-                    cin >> playAgain;
-
                     numRolls++;
-                    playAgain = 'n';
                 }
+                playAgain = 'n';
             }
         }
+        gameStart = 'n';
     }
     
-    cout << "You rolled " << numRolls << "times" << endl;
+    cout << "You rolled " << numRolls << " times" << endl;
     cout << "Bye!" << endl;
-    gameStart = 'n';
 }
 
 

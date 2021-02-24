@@ -16,11 +16,9 @@ Add your steps (pseudo-code) for the dice game here.
         IF total is 7 or 11
             print out the values of die 1 and 2
             display "you win"
-            set gameStart to 'n'
         ELSE IF total equals 2,3 or 12
             print out the values of die 1 and 2
             display "you lose"
-            set gameStart to 'n'
         ELSE 
             print out the values of die 1 and 2
             init char playAgain
@@ -37,23 +35,18 @@ Add your steps (pseudo-code) for the dice game here.
                 IF dieSum equals point
                     print out die 1 and die 2 values
                     display "You win"
-                    Ask to play again
-                    READ answer and set gameStart to the answer
                     set numRolls to 0
                 ELSE IF dieSum is 7
                     print out die1 and die2 values
                     display "you lose"
-                    Ask to play again
-                    READ answer and set gameStart to the answer
                     set numRolls to 0
                 ELSE
                     print out die1 and die2 values
-                    Ask to press R to roll again
-                    Read answer and assign to playAgain
                     increment numRolls by 1
+                set playAgain to n 
+        set gameStart to n   
     
     print out numRolls
     display bye message
-    set gameStart to 'n'
 
 
